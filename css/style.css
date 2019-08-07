@@ -1,0 +1,276 @@
+/* ### GENREAL_SETTINGS ### */
+@font-face {
+    font-family: 'Acari-Sans-Regular';
+    src: url('../fonts/acari-sans.regular.ttf');
+}
+
+@font-face {
+    font-family: 'Delia';
+    src: url('../fonts/delia.free.otf');
+}
+
+.wrapper{
+    max-width: 2560px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Delia';
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Acari-Sans-Regular', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+}
+
+span {
+    font-family: 'Acari-Sans-Regular', sans-serif;
+    font-size: 25px;
+}
+
+
+/* ### HEADER_SETTINGS ### */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100px;
+}
+
+.main-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-icons img{
+    padding-left: 50px;
+    height: 50px;
+}
+
+
+/* ### NAV_SETTINGS ### */
+.mainnav{
+    font-family: 'Acari-Sans-Regular', sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.mainnav ul{
+    display: flex;
+    list-style: none;
+}
+
+.mainnav li{
+   padding: 10px 50px 10px 50px;
+}
+
+.mainnav a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.mainnav a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid #107C7C;
+    transition: 0.6s;
+  }
+  
+  a:hover:after {
+    width: 100%;
+  }
+
+
+/* ### BANNER_SETTINGS ### */
+.banner img {
+}
+
+
+/* ### SECTION_SETTINGS ### */
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.heart{
+    height: 50px;
+    position: absolute;
+}
+
+.heart_1,
+.heart_5{
+    left: 95px;
+}
+
+.heart_2,
+.heart_6{
+    left: 670px;
+}
+
+.heart_3,
+.heart_7{
+    left: 1250px;
+}
+
+.heart_4,
+.heart_8{left: 1825px;}
+
+.container {
+    position: relative;
+}
+  
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+}
+  
+  .container:hover .overlay {
+    opacity: 0.7;
+  }
+
+  .overlay a {
+      text-decoration: none;
+  }
+  
+  .overlay_text {
+    font-family: 'Delia';
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+/* ### BACK-TO-TOP_SETTINGS ### */
+.back-to-top {
+display: flex;
+justify-content: center;
+}
+
+.button{
+    height: 50px;
+    margin-bottom: 100px;
+}
+
+
+/* ### FOOTER_SETTINGS ### */
+footer {
+    background-color: #043E3E;
+    padding: 100px 0 100px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.contact {
+    width: 300px;
+}
+
+.contact p {
+    font-family: 'Acari-Sans-Regular', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+form input{
+    font-family: 'Acari-Sans-Regular', sans-serif;
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 300px;
+}
+
+.button_news {
+    margin-top: 50px;
+}
+
+.button_news a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Acari-Sans-Regular', sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+.circle {
+    position: relative;
+}
+
+hr {
+    background-color: white;
+    color:white;
+    height: 0.5px;
+  }
+
+.data {
+    font-family: 'Acari-Sans-Regular', sans-serif;
+    font-size: 25px;
+    text-align: right;
+    margin-top: 25px;
+}
+
+.data a {
+    text-decoration: underline;
+    color: white;
+    padding-left: 20px;
+}
+
+
+/* ### FORMULAR_ERROR ### */
+.error {
+    border: 3px solid red;
+  }
